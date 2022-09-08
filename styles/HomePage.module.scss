@@ -1,0 +1,867 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.homePage{
+    .mainSection{
+        padding: 160px 0 160px 130px;
+        background-color: #EDF0F7F7;
+        display: flex;
+        flex-direction: row;
+        .mainSectionTextCta{
+            width: 708px;
+            .mainSectionText{
+                display: flex;
+                flex-direction: column;
+                .description{
+                    font-size: 24px;
+                    margin: 2rem 0 1rem;
+                }
+                ul{
+                    margin: 0;
+                    li{
+                        margin: 1rem 0;
+                        .Check{
+                            display: flex;
+                        }
+                    }
+                }
+            }
+            .mainSectionCta{
+                display: flex;
+                flex-direction: row;
+                margin-top: 2rem;
+                p{
+                    font-size: 16px;
+                }
+                #mobile{
+                    display: none;
+                }
+                .creationSiteWeb{
+                    display: flex;
+                    flex-direction: column;
+                    
+                    button{
+                        width:269px;
+                        height: 58px;
+                        background-color: #3170F7;
+                        border: none;
+                        border-radius: 20px;
+                        font-family: "Inter";
+                        font-size: 20px;
+                        font-weight: 600;
+                        line-height: 26px;
+                        letter-spacing: 0em;
+                        text-align: center;
+                        color: #fff;
+                    }
+
+                    button:hover{
+                        background-color: #2759C4;
+                        cursor: pointer;
+                    }
+
+                    p{
+                        font-size: 16px;
+                        color: #737482;
+                        text-align: center;
+                        margin-top: 0.5rem;
+                    }
+                }
+                #enSavoirPlus{
+                    width: 198px;
+                    height: 58px;
+                    margin-left: 1rem;
+                    background: none;
+                    border: 2px solid #3170F7;
+                    border-radius: 20px;
+
+                    font-family: "Inter";
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 26px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    color: #3170F7;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-decoration: none;
+                }
+
+                #enSavoirPlus:hover{
+                    background-color: #3170F7;
+                    color: #F7F7F7;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .mainSectionImage{
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            span{
+                span{
+                    img{
+                        margin: 0 0 0 auto!important;
+                        width: inherit !important;
+                        height: 35vw!important;
+                        min-width: 0 !important;
+                        max-width: none !important;
+                        min-height: 0 !important;
+                        max-height: none !important;
+                    }
+                }
+                #imageMainSection{
+                    margin: 0 0 0 auto!important;
+                    width: inherit !important;
+                    height: 35vw!important;
+                    min-width: 0 !important;
+                    max-width: none !important;
+                    min-height: 0 !important;
+                    max-height: none !important;
+                }
+            }
+        }
+    }
+
+    .accroche{
+        display: flex;
+        flex-direction: column;
+        padding: 140px 130px;
+        align-items: center;
+        h2{
+            width: 90vw;
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        .accrocheTextImage{
+            display: flex;
+            flex-direction: row;
+            
+            span{
+                overflow: inherit !important;
+                display: flex !important;
+                align-items: center !important;
+                span{
+                    object-fit: contain !important;
+                    width: 476px !important;
+                    max-width: none !important;
+                    height: inherit !important;
+                }
+                #accrocheImage{
+                    position: inherit !important;
+                    object-fit: contain !important;
+                    max-width: none !important;
+                    height: inherit !important;
+
+                }
+            }
+
+            .accrocheText{
+                margin-left: 5rem;
+                ul{
+                    li{
+                        margin: 40px 0;
+                        .Check{
+                            align-items: flex-start !important;
+                            svg{
+                                margin-top: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .qualites{
+        padding: 3rem 130px;
+        background-color: #F9FBFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            margin: 0 0 2.5rem;
+        }
+
+        .listeQualites{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: center;
+
+            .qualite{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 390px;
+                min-width: 270px;
+                margin: 0 20px;
+                p{
+                    text-align: center;
+                }
+                span{
+                    span{
+                        width: 64px !important;
+                        min-width: 0 !important;
+                        height: inherit !important;
+                        min-width: 0 !important;
+                        min-height: 0 !important;
+                    }
+                    #iconQualite{
+                        width: 64px !important;
+                        min-width: 0 !important;
+                        margin: 0 !important;
+                        height: inherit !important;
+                        min-width: 0 !important;
+                        min-height: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .services{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 140px 130px;
+
+        h2{
+            margin: 0 0 4rem;
+        }
+        .listeServices{
+            display: grid;
+            grid-template-columns: repeat(2,565px);
+            justify-content: center;
+            grid-gap: 4rem 2.5rem;
+            
+            .service{
+                .titre{
+                    margin-bottom: 1.5rem;
+                    display: flex;
+                    flex-direction: row;
+                    span{
+                        span{
+                            width: 40px !important;
+                            object-fit: contain !important;
+                            min-width: 0 !important;
+                            margin: 0 !important;
+                            min-width: 0 !important;
+                            margin: 0 !important;
+                            height: inherit !important;
+                            min-width: 0 !important;
+                            min-height: 0 !important;
+                        }
+                        #iconsService{
+                            width: 40px !important;
+                            object-fit: contain !important;
+                            min-width: 0 !important;
+                            margin: 0 !important;
+                            min-width: 0 !important;
+                            margin: 0 !important;
+                            height: inherit !important;
+                            min-width: 0 !important;
+                            min-height: 0 !important;
+                        }
+                    }
+                    
+                    h3{
+                        margin: 0 0 0 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .pourquoiSiteWeb{
+        padding: 48px 130px 48px 64px;
+        display: flex;
+        flex-direction: column;
+        background-color: #F0FAFD;
+        
+        h2{
+            margin: 0;
+            text-align: center;
+        }
+        .pourquoiSiteWebTextImage{
+            display: flex;
+            flex-direction: row;
+            margin-top: 2rem;
+            img{
+                width: 55vw;
+                object-fit: contain;
+            }
+            .pourquoiSiteWebText{
+                display: flex;
+                flex-direction: column;
+                margin-top: 85px;
+                h3{
+                    margin: 0 0 2rem;
+                }
+                button{
+                    width: 269px;
+                    height: 42px;
+                    border: 2px solid #3170F7;
+                    background: none;
+                    border-radius: 20px;
+                    font-family: "Inter";
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 26px;
+                    letter-spacing: 0em;
+                    color: #3170F7;
+                    margin-top: 2rem;
+                }
+                button:hover{
+                    background-color: #3170F7;
+                    color: #F7F7F7;
+                    cursor: pointer;
+                }
+            }
+        }
+        
+    }
+
+    .methode{
+        display: flex;
+        flex-direction: column;
+        padding: 140px 130px;
+        h2{
+            text-align: center;
+            margin: 0;
+        }
+        .etapeMethode{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 4rem 0;
+            p{
+                font-weight: 600;
+                line-height: 44px;
+
+                display: inline-block;
+                padding-bottom: 0.25rem;
+                position: relative;
+            }
+
+            p::before{
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 0;
+                height: 4px;
+                background-color: #3170F7;
+                transition: width 0.25s ease-out;
+            }
+
+            p:hover::before{
+                width: 100%;
+            }
+
+            p:hover{
+                cursor: pointer;
+                color: #3170F7;
+                transition: 0.25s;
+            }
+
+            .ChevronRight{
+                margin: 6px 1rem 0;
+            }
+
+            .souligne{
+                display: inline-block;
+                padding-bottom: 0.25rem;
+                position: relative;
+                color: #3170F7;
+            }
+
+            .souligne::before{
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 4px;
+                background-color: #3170F7;
+                transition: width 0.25s ease-out;
+            }
+        }
+
+        .etapeMethodeTextImage{
+            
+
+            span{
+                overflow: inherit !important;
+                span{
+                    width: 470px !important;
+                    img{
+                        width: 470px !important;
+                    }
+                }
+                img{
+                    width: 470px !important;
+                }
+            }
+            img{
+                object-fit: contain;
+                width: 470px;
+            }
+            .etape{
+                display: flex;
+                flex-direction: row;
+                display: none;
+                .etapeMethodeText{
+                    // width: 700px;     
+                    padding-top: 4rem;
+                    margin-left: 3rem;             
+                    .enTete{
+                        display: flex;
+                        flex-direction: row;      
+                        margin-bottom: 2rem;
+                        .lineAvantText, .lineApresText{
+                            border: 1px solid #3170F7;
+                            width: 63px;
+                            height: 0;
+                            margin-top: 15px;
+                        }
+                        
+                        .lineApresText{
+                            width: -webkit-fill-available;
+                        }
+                        p{
+                            color: #3170F7;
+                            font-weight: 600;
+                            margin: 0 1.5rem;
+                            white-space: nowrap;
+                        }
+
+                    }
+
+                }
+            }
+
+            .diagnostique{
+                display: flex;
+            }
+
+            .uxRecherche{
+                display: flex;
+            }
+
+            .designWeb{
+                display: flex;
+            }
+
+            .developpement{
+                display: flex;
+            }
+
+            .formation{
+                display: flex;
+            }
+
+            .maintenance{
+                display: flex;
+            }
+
+            
+
+        }
+
+
+    }
+
+    .methodeMobile{
+        display: none;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        padding: 80px 0 64px;
+        .Logo{
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .contacts{
+            display: grid;
+            grid-template-rows: repeat(2,55px);
+            gap: 1rem;
+            margin-bottom: 2rem;
+            p{
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 55px;
+                letter-spacing: 0em;
+                text-align: center;
+            }
+        }
+        
+        .reseaux{
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(3,50px);
+            gap: 94px;
+            margin-bottom: 5rem;
+        }
+
+        .documentsJuridiques{
+            display: grid;
+            grid-template-columns: repeat(2,128px);
+            justify-content: center;
+            gap: 48px;
+            p{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 44px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+        }
+    }
+
+    .Modal{
+        display: flex;
+        flex-direction: column;
+        .form{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+           
+        }
+        
+    }
+}
+
+@media screen and (max-width:1292px){
+    .methode{
+        padding: 140px 48px !important;
+    }
+}
+
+@media screen and (max-width:1180px){
+    .homePage{
+        .accroche{
+            padding: 140px 10vw;
+            .accrocheTextImage{
+                span{
+                    span{
+                        width: 30vw !important;   
+                    }
+                }
+
+            }
+        }
+
+        .services{
+            .listeServices{
+                grid-template-columns: repeat(2, 395px);
+            }
+        }
+
+        .pourquoiSiteWeb{
+            padding: 48px 5vw 48px 1rem;   
+
+        }
+    }
+}
+
+@media screen and (max-width:1128px){
+     .methode{
+            display: none !important;
+        }
+
+    .methodeMobile{
+        padding: 80px 1.5rem !important;
+        display: flex !important;
+        flex-direction: column;
+        h2{
+            margin: 3rem 0 2.5rem;
+        }
+        .etape{
+            .souligne{
+                color: #3170F7;
+                svg{
+                    path{
+                        fill: #3170F7;
+                    }
+                }
+            }
+            .title{
+                display: flex;
+                flex-direction: row;
+                margin: 1rem 0;
+                h3{
+                    margin: 0;
+                }
+                .ChevronBottom{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: auto;
+                    
+                }
+            }
+            .etapeTextImage{
+                height: 0px;
+                overflow: hidden;
+                transition: height 1s ease;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                flex-direction: column;
+
+                span{
+                    overflow: visible !important;
+                    span{
+                        img{
+                            margin: 0 auto!important;
+                            width: inherit !important;
+                            height: 150px !important;
+                            min-width: 0 !important;
+                            max-width: none !important;
+                            min-height: 0 !important;
+                            max-height: none !important;
+                        }
+                    }
+                    #imageEtape{
+                        margin: 0 auto!important;
+                        width: inherit !important;
+                        height: 150px !important;
+                        min-width: 0 !important;
+                        max-width: none !important;
+                        min-height: 0 !important;
+                        max-height: none !important;
+                    }
+                }
+                img{
+                    height: 400px;
+
+                }
+                .etapeText{
+                    margin-bottom: 1rem;
+                    #title{
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 28px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        margin: 1rem 0;
+                    }
+                    p{
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 28px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                    }
+                }
+            }
+
+            .diagnostique, .uxRecherche, .designWeb, .developpement, .formation, .maintenance{
+                height: 400px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                transition: height 1s ease;       
+            }
+        }
+
+        .line{
+            border: 1px solid #F1F2F3
+        }
+    }
+}
+
+@media screen and (max-width:950px){
+    .homePage{
+        .mainSection{
+            padding: 160px 0 160px 10vw ;
+        }
+
+        .accroche{
+            .accrocheTextImage{
+                .accrocheText{
+                    margin: 0;
+                }
+                flex-direction: column;
+                align-items: center;
+                img{
+                    width: 40vw !important;
+                }
+            }
+        }
+
+        .qualites{
+            .listeQualites{
+                flex-direction: column;
+                align-items: center;
+                .qualite{
+                    margin: 2.5rem 0;
+                    width: 100%;
+                }
+            }
+        }
+
+        .services{
+            .listeServices{
+                grid-template-columns: repeat(1,100%);
+            }
+        }
+    }
+}
+
+@media screen and (max-width:844px){
+    .pourquoiSiteWeb{
+        padding: 48px 1.5rem !important;   
+        .pourquoiSiteWebTextImage{
+            flex-direction: column !important;
+            align-items: center ;
+            img{
+                width:70vw !important;
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+
+    .homePage{
+        .mainSection{
+            padding: 104px 1.5rem 2.5rem;
+            .mainSectionTextCta{
+                
+                .mainSectionCta{
+                    flex-direction: column;
+                    p{
+                        font-size: 14px;
+                        text-align: center;
+                        margin-top: 1rem;
+                        color: #737482;
+                    }
+                    #mobile{
+                        display: block;
+                    }
+                    .creationSiteWeb{
+                        button{
+                            width: 100%;
+                            height: 42px;
+                            margin-bottom: 1rem;
+                            font-size: 16px;
+                        }
+                        #desktop{
+                            display: none;
+                        }
+                    }
+                    #enSavoirPlus{
+                        width: 100%;
+                        height: 38px;
+                        margin: 0;
+                        font-size: 16px;
+                    }
+                }
+            }
+            .mainSectionImage{
+                display: none;
+            }
+
+        }
+
+        .accroche{
+            padding: 5rem 1.5rem;
+            h2{
+                width: 100%;
+                margin: 0 0 2.5rem;
+            }
+            .accrocheTextImage{
+                flex-direction: column;
+                align-items: center;
+
+                
+                // img{
+                //     // width: 50vw !important;
+                //     height: 100px !important
+                //     // min-width: 298px;
+                //     // margin: 0;
+                // }
+                .accrocheText{
+                    h3{
+                        margin: 2.5rem 0 0;
+                    }
+                    ul{
+                        li{
+                            margin: 1.5rem 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .qualites{
+            padding: 3rem 1.5rem;
+            h2{
+                text-align: center;
+                margin: 0;
+            }
+        }
+
+        .services{
+            padding: 5rem 1.5rem;
+            h2{
+                text-align: center;
+                width: 100%;
+            }
+            
+
+        }
+
+        .pourquoiSiteWeb{
+            padding: 3rem 1.5rem 2rem;
+            
+            .pourquoiSiteWebTextImage{
+                flex-direction: column;
+ 
+                .pourquoiSiteWebText{
+                    button{
+                        width: 100%;
+                    }
+                }
+            }
+
+        }
+
+        footer{
+            .contacts{
+                grid-template-rows: repeat(2,32px);
+                p{
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 32px;
+                }
+            }        
+            .reseaux{
+                gap: 1rem;
+                margin-bottom: 3rem;
+                svg{
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+            .documentsJuridiques{
+                grid-template-columns: repeat(1,128px);
+                grid-template-rows: repeat(2,32px);
+                gap: 1.5rem;
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    
+}

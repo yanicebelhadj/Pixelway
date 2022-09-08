@@ -1,0 +1,720 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.homePage .mainSection {
+  padding: 160px 0 160px 130px;
+  background-color: rgba(237, 240, 247, 0.968627451);
+  display: flex;
+  flex-direction: row;
+}
+.homePage .mainSection .mainSectionTextCta {
+  width: 708px;
+}
+.homePage .mainSection .mainSectionTextCta .mainSectionText {
+  display: flex;
+  flex-direction: column;
+}
+.homePage .mainSection .mainSectionTextCta .mainSectionText .description {
+  font-size: 24px;
+  margin: 2rem 0 1rem;
+}
+.homePage .mainSection .mainSectionTextCta .mainSectionText ul {
+  margin: 0;
+}
+.homePage .mainSection .mainSectionTextCta .mainSectionText ul li {
+  margin: 1rem 0;
+}
+.homePage .mainSection .mainSectionTextCta .mainSectionText ul li .Check {
+  display: flex;
+}
+.homePage .mainSection .mainSectionTextCta .mainSectionCta {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+.homePage .mainSection .mainSectionTextCta .mainSectionCta p {
+  font-size: 16px;
+}
+.homePage .mainSection .mainSectionTextCta .mainSectionCta #mobile {
+  display: none;
+}
+.homePage .mainSection .mainSectionTextCta .mainSectionCta .creationSiteWeb {
+  display: flex;
+  flex-direction: column;
+}
+.homePage .mainSection .mainSectionTextCta .mainSectionCta .creationSiteWeb button {
+  width: 269px;
+  height: 58px;
+  background-color: #3170F7;
+  border: none;
+  border-radius: 20px;
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+}
+.homePage .mainSection .mainSectionTextCta .mainSectionCta .creationSiteWeb button:hover {
+  background-color: #2759C4;
+  cursor: pointer;
+}
+.homePage .mainSection .mainSectionTextCta .mainSectionCta .creationSiteWeb p {
+  font-size: 16px;
+  color: #737482;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.homePage .mainSection .mainSectionTextCta .mainSectionCta #enSavoirPlus {
+  width: 198px;
+  height: 58px;
+  margin-left: 1rem;
+  background: none;
+  border: 2px solid #3170F7;
+  border-radius: 20px;
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #3170F7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.homePage .mainSection .mainSectionTextCta .mainSectionCta #enSavoirPlus:hover {
+  background-color: #3170F7;
+  color: #F7F7F7;
+  cursor: pointer;
+}
+.homePage .mainSection .mainSectionImage {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.homePage .mainSection .mainSectionImage span span img {
+  margin: 0 0 0 auto !important;
+  width: inherit !important;
+  height: 35vw !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  min-height: 0 !important;
+  max-height: none !important;
+}
+.homePage .mainSection .mainSectionImage span #imageMainSection {
+  margin: 0 0 0 auto !important;
+  width: inherit !important;
+  height: 35vw !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  min-height: 0 !important;
+  max-height: none !important;
+}
+.homePage .accroche {
+  display: flex;
+  flex-direction: column;
+  padding: 140px 130px;
+  align-items: center;
+}
+.homePage .accroche h2 {
+  width: 90vw;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.homePage .accroche .accrocheTextImage {
+  display: flex;
+  flex-direction: row;
+}
+.homePage .accroche .accrocheTextImage span {
+  overflow: inherit !important;
+  display: flex !important;
+  align-items: center !important;
+}
+.homePage .accroche .accrocheTextImage span span {
+  object-fit: contain !important;
+  width: 476px !important;
+  max-width: none !important;
+  height: inherit !important;
+}
+.homePage .accroche .accrocheTextImage span #accrocheImage {
+  position: inherit !important;
+  object-fit: contain !important;
+  max-width: none !important;
+  height: inherit !important;
+}
+.homePage .accroche .accrocheTextImage .accrocheText {
+  margin-left: 5rem;
+}
+.homePage .accroche .accrocheTextImage .accrocheText ul li {
+  margin: 40px 0;
+}
+.homePage .accroche .accrocheTextImage .accrocheText ul li .Check {
+  align-items: flex-start !important;
+}
+.homePage .accroche .accrocheTextImage .accrocheText ul li .Check svg {
+  margin-top: 5px;
+}
+.homePage .qualites {
+  padding: 3rem 130px;
+  background-color: #F9FBFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.homePage .qualites h2 {
+  margin: 0 0 2.5rem;
+}
+.homePage .qualites .listeQualites {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+.homePage .qualites .listeQualites .qualite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 390px;
+  min-width: 270px;
+  margin: 0 20px;
+}
+.homePage .qualites .listeQualites .qualite p {
+  text-align: center;
+}
+.homePage .qualites .listeQualites .qualite span span {
+  width: 64px !important;
+  min-width: 0 !important;
+  height: inherit !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+}
+.homePage .qualites .listeQualites .qualite span #iconQualite {
+  width: 64px !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  height: inherit !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+}
+.homePage .services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 140px 130px;
+}
+.homePage .services h2 {
+  margin: 0 0 4rem;
+}
+.homePage .services .listeServices {
+  display: grid;
+  grid-template-columns: repeat(2, 565px);
+  justify-content: center;
+  grid-gap: 4rem 2.5rem;
+}
+.homePage .services .listeServices .service .titre {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: row;
+}
+.homePage .services .listeServices .service .titre span span {
+  width: 40px !important;
+  object-fit: contain !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  height: inherit !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+}
+.homePage .services .listeServices .service .titre span #iconsService {
+  width: 40px !important;
+  object-fit: contain !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  height: inherit !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+}
+.homePage .services .listeServices .service .titre h3 {
+  margin: 0 0 0 1rem;
+}
+.homePage .pourquoiSiteWeb {
+  padding: 48px 130px 48px 64px;
+  display: flex;
+  flex-direction: column;
+  background-color: #F0FAFD;
+}
+.homePage .pourquoiSiteWeb h2 {
+  margin: 0;
+  text-align: center;
+}
+.homePage .pourquoiSiteWeb .pourquoiSiteWebTextImage {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+.homePage .pourquoiSiteWeb .pourquoiSiteWebTextImage img {
+  width: 55vw;
+  object-fit: contain;
+}
+.homePage .pourquoiSiteWeb .pourquoiSiteWebTextImage .pourquoiSiteWebText {
+  display: flex;
+  flex-direction: column;
+  margin-top: 85px;
+}
+.homePage .pourquoiSiteWeb .pourquoiSiteWebTextImage .pourquoiSiteWebText h3 {
+  margin: 0 0 2rem;
+}
+.homePage .pourquoiSiteWeb .pourquoiSiteWebTextImage .pourquoiSiteWebText button {
+  width: 269px;
+  height: 42px;
+  border: 2px solid #3170F7;
+  background: none;
+  border-radius: 20px;
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0em;
+  color: #3170F7;
+  margin-top: 2rem;
+}
+.homePage .pourquoiSiteWeb .pourquoiSiteWebTextImage .pourquoiSiteWebText button:hover {
+  background-color: #3170F7;
+  color: #F7F7F7;
+  cursor: pointer;
+}
+.homePage .methode {
+  display: flex;
+  flex-direction: column;
+  padding: 140px 130px;
+}
+.homePage .methode h2 {
+  text-align: center;
+  margin: 0;
+}
+.homePage .methode .etapeMethode {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem 0;
+}
+.homePage .methode .etapeMethode p {
+  font-weight: 600;
+  line-height: 44px;
+  display: inline-block;
+  padding-bottom: 0.25rem;
+  position: relative;
+}
+.homePage .methode .etapeMethode p::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 4px;
+  background-color: #3170F7;
+  transition: width 0.25s ease-out;
+}
+.homePage .methode .etapeMethode p:hover::before {
+  width: 100%;
+}
+.homePage .methode .etapeMethode p:hover {
+  cursor: pointer;
+  color: #3170F7;
+  transition: 0.25s;
+}
+.homePage .methode .etapeMethode .ChevronRight {
+  margin: 6px 1rem 0;
+}
+.homePage .methode .etapeMethode .souligne {
+  display: inline-block;
+  padding-bottom: 0.25rem;
+  position: relative;
+  color: #3170F7;
+}
+.homePage .methode .etapeMethode .souligne::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #3170F7;
+  transition: width 0.25s ease-out;
+}
+.homePage .methode .etapeMethodeTextImage span {
+  overflow: inherit !important;
+}
+.homePage .methode .etapeMethodeTextImage span span {
+  width: 470px !important;
+}
+.homePage .methode .etapeMethodeTextImage span span img {
+  width: 470px !important;
+}
+.homePage .methode .etapeMethodeTextImage span img {
+  width: 470px !important;
+}
+.homePage .methode .etapeMethodeTextImage img {
+  object-fit: contain;
+  width: 470px;
+}
+.homePage .methode .etapeMethodeTextImage .etape {
+  display: flex;
+  flex-direction: row;
+  display: none;
+}
+.homePage .methode .etapeMethodeTextImage .etape .etapeMethodeText {
+  padding-top: 4rem;
+  margin-left: 3rem;
+}
+.homePage .methode .etapeMethodeTextImage .etape .etapeMethodeText .enTete {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+}
+.homePage .methode .etapeMethodeTextImage .etape .etapeMethodeText .enTete .lineAvantText, .homePage .methode .etapeMethodeTextImage .etape .etapeMethodeText .enTete .lineApresText {
+  border: 1px solid #3170F7;
+  width: 63px;
+  height: 0;
+  margin-top: 15px;
+}
+.homePage .methode .etapeMethodeTextImage .etape .etapeMethodeText .enTete .lineApresText {
+  width: -webkit-fill-available;
+}
+.homePage .methode .etapeMethodeTextImage .etape .etapeMethodeText .enTete p {
+  color: #3170F7;
+  font-weight: 600;
+  margin: 0 1.5rem;
+  white-space: nowrap;
+}
+.homePage .methode .etapeMethodeTextImage .diagnostique {
+  display: flex;
+}
+.homePage .methode .etapeMethodeTextImage .uxRecherche {
+  display: flex;
+}
+.homePage .methode .etapeMethodeTextImage .designWeb {
+  display: flex;
+}
+.homePage .methode .etapeMethodeTextImage .developpement {
+  display: flex;
+}
+.homePage .methode .etapeMethodeTextImage .formation {
+  display: flex;
+}
+.homePage .methode .etapeMethodeTextImage .maintenance {
+  display: flex;
+}
+.homePage .methodeMobile {
+  display: none;
+}
+.homePage footer {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0 64px;
+}
+.homePage footer .Logo {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.homePage footer .contacts {
+  display: grid;
+  grid-template-rows: repeat(2, 55px);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.homePage footer .contacts p {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 55px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.homePage footer .reseaux {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 50px);
+  gap: 94px;
+  margin-bottom: 5rem;
+}
+.homePage footer .documentsJuridiques {
+  display: grid;
+  grid-template-columns: repeat(2, 128px);
+  justify-content: center;
+  gap: 48px;
+}
+.homePage footer .documentsJuridiques p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.homePage .Modal {
+  display: flex;
+  flex-direction: column;
+}
+.homePage .Modal .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 1292px) {
+  .methode {
+    padding: 140px 48px !important;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .homePage .accroche {
+    padding: 140px 10vw;
+  }
+  .homePage .accroche .accrocheTextImage span span {
+    width: 30vw !important;
+  }
+  .homePage .services .listeServices {
+    grid-template-columns: repeat(2, 395px);
+  }
+  .homePage .pourquoiSiteWeb {
+    padding: 48px 5vw 48px 1rem;
+  }
+}
+@media screen and (max-width: 1128px) {
+  .methode {
+    display: none !important;
+  }
+  .methodeMobile {
+    padding: 80px 1.5rem !important;
+    display: flex !important;
+    flex-direction: column;
+  }
+  .methodeMobile h2 {
+    margin: 3rem 0 2.5rem;
+  }
+  .methodeMobile .etape .souligne {
+    color: #3170F7;
+  }
+  .methodeMobile .etape .souligne svg path {
+    fill: #3170F7;
+  }
+  .methodeMobile .etape .title {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0;
+  }
+  .methodeMobile .etape .title h3 {
+    margin: 0;
+  }
+  .methodeMobile .etape .title .ChevronBottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+  }
+  .methodeMobile .etape .etapeTextImage {
+    height: 0px;
+    overflow: hidden;
+    transition: height 1s ease;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+  }
+  .methodeMobile .etape .etapeTextImage span {
+    overflow: visible !important;
+  }
+  .methodeMobile .etape .etapeTextImage span span img {
+    margin: 0 auto !important;
+    width: inherit !important;
+    height: 150px !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    max-height: none !important;
+  }
+  .methodeMobile .etape .etapeTextImage span #imageEtape {
+    margin: 0 auto !important;
+    width: inherit !important;
+    height: 150px !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    max-height: none !important;
+  }
+  .methodeMobile .etape .etapeTextImage img {
+    height: 400px;
+  }
+  .methodeMobile .etape .etapeTextImage .etapeText {
+    margin-bottom: 1rem;
+  }
+  .methodeMobile .etape .etapeTextImage .etapeText #title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 1rem 0;
+  }
+  .methodeMobile .etape .etapeTextImage .etapeText p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .methodeMobile .etape .diagnostique, .methodeMobile .etape .uxRecherche, .methodeMobile .etape .designWeb, .methodeMobile .etape .developpement, .methodeMobile .etape .formation, .methodeMobile .etape .maintenance {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: height 1s ease;
+  }
+  .methodeMobile .line {
+    border: 1px solid #F1F2F3;
+  }
+}
+@media screen and (max-width: 950px) {
+  .homePage .mainSection {
+    padding: 160px 0 160px 10vw;
+  }
+  .homePage .accroche .accrocheTextImage {
+    flex-direction: column;
+    align-items: center;
+  }
+  .homePage .accroche .accrocheTextImage .accrocheText {
+    margin: 0;
+  }
+  .homePage .accroche .accrocheTextImage img {
+    width: 40vw !important;
+  }
+  .homePage .qualites .listeQualites {
+    flex-direction: column;
+    align-items: center;
+  }
+  .homePage .qualites .listeQualites .qualite {
+    margin: 2.5rem 0;
+    width: 100%;
+  }
+  .homePage .services .listeServices {
+    grid-template-columns: repeat(1, 100%);
+  }
+}
+@media screen and (max-width: 844px) {
+  .pourquoiSiteWeb {
+    padding: 48px 1.5rem !important;
+  }
+  .pourquoiSiteWeb .pourquoiSiteWebTextImage {
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .pourquoiSiteWeb .pourquoiSiteWebTextImage img {
+    width: 70vw !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .homePage .mainSection {
+    padding: 104px 1.5rem 2.5rem;
+  }
+  .homePage .mainSection .mainSectionTextCta .mainSectionCta {
+    flex-direction: column;
+  }
+  .homePage .mainSection .mainSectionTextCta .mainSectionCta p {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 1rem;
+    color: #737482;
+  }
+  .homePage .mainSection .mainSectionTextCta .mainSectionCta #mobile {
+    display: block;
+  }
+  .homePage .mainSection .mainSectionTextCta .mainSectionCta .creationSiteWeb button {
+    width: 100%;
+    height: 42px;
+    margin-bottom: 1rem;
+    font-size: 16px;
+  }
+  .homePage .mainSection .mainSectionTextCta .mainSectionCta .creationSiteWeb #desktop {
+    display: none;
+  }
+  .homePage .mainSection .mainSectionTextCta .mainSectionCta #enSavoirPlus {
+    width: 100%;
+    height: 38px;
+    margin: 0;
+    font-size: 16px;
+  }
+  .homePage .mainSection .mainSectionImage {
+    display: none;
+  }
+  .homePage .accroche {
+    padding: 5rem 1.5rem;
+  }
+  .homePage .accroche h2 {
+    width: 100%;
+    margin: 0 0 2.5rem;
+  }
+  .homePage .accroche .accrocheTextImage {
+    flex-direction: column;
+    align-items: center;
+  }
+  .homePage .accroche .accrocheTextImage .accrocheText h3 {
+    margin: 2.5rem 0 0;
+  }
+  .homePage .accroche .accrocheTextImage .accrocheText ul li {
+    margin: 1.5rem 0;
+  }
+  .homePage .qualites {
+    padding: 3rem 1.5rem;
+  }
+  .homePage .qualites h2 {
+    text-align: center;
+    margin: 0;
+  }
+  .homePage .services {
+    padding: 5rem 1.5rem;
+  }
+  .homePage .services h2 {
+    text-align: center;
+    width: 100%;
+  }
+  .homePage .pourquoiSiteWeb {
+    padding: 3rem 1.5rem 2rem;
+  }
+  .homePage .pourquoiSiteWeb .pourquoiSiteWebTextImage {
+    flex-direction: column;
+  }
+  .homePage .pourquoiSiteWeb .pourquoiSiteWebTextImage .pourquoiSiteWebText button {
+    width: 100%;
+  }
+  .homePage footer .contacts {
+    grid-template-rows: repeat(2, 32px);
+  }
+  .homePage footer .contacts p {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+  .homePage footer .reseaux {
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+  .homePage footer .reseaux svg {
+    width: 32px;
+    height: 32px;
+  }
+  .homePage footer .documentsJuridiques {
+    grid-template-columns: repeat(1, 128px);
+    grid-template-rows: repeat(2, 32px);
+    gap: 1.5rem;
+  }
+  .homePage footer .documentsJuridiques p {
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=HomePage.module.css.map */
