@@ -33,7 +33,7 @@ export default function handler(req, res) {
 		.replace(/<(?!br\s*\/?)[^>]+>/g, ""); // supprime tout le html en autorisant uniquement les balises <br>
 
 	// Donner la clé API
-	sgMail.setApiKey(process.env.KEY_SENDGRID);
+	sgMail.setApiKey(process.env.KEY_SENDGRID);	
 
 	// Création du message
 	const sendGridMailClient = {

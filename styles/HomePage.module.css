@@ -443,6 +443,9 @@
   gap: 94px;
   margin-bottom: 5rem;
 }
+.homePage footer .reseaux .LinkedIn, .homePage footer .reseaux .Dribbble, .homePage footer .reseaux .Instagram {
+  justify-content: center !important;
+}
 .homePage footer .documentsJuridiques {
   display: grid;
   grid-template-columns: repeat(2, 128px);
@@ -569,7 +572,7 @@
     text-align: left;
   }
   .methodeMobile .etape .diagnostique, .methodeMobile .etape .uxRecherche, .methodeMobile .etape .designWeb, .methodeMobile .etape .developpement, .methodeMobile .etape .formation, .methodeMobile .etape .maintenance {
-    height: 400px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
