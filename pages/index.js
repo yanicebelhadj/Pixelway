@@ -347,7 +347,7 @@ const HomePage = () =>{
                           <p>
                             Un site se doit d’être à l’image de l’entreprise, c’est-à-dire professionnel. L’objectif final est donc que le site soit à la fois le plus fluide et performant possible. 
                             De ce fait, nous utiliserons les meilleurs outils afin de développer ce dernier. <br/><br/>Rappelons qu’un site bien développé sera mieux positionné dans les moteurs de recherches.
-                            La traçabilité est un élément clé dans le travail d’un développeur. Pour ce faire, notre code sera expliqué en détail dans le but d'être maintenable et évolutif.
+                            La traçabilité est un élément clé dans le travail d’un développeur. Pour ce faire, notre code sera expliqué en détail dans le but d&apos;être maintenable et évolutif.
                           </p>
                       </div>
                   </div>
@@ -467,7 +467,7 @@ const HomePage = () =>{
                         <p>
                             Un site se doit d’être à l’image de l’entreprise, c’est-à-dire professionnel. L’objectif final est donc que le site soit à la fois le plus fluide et performant possible. 
                             De ce fait, nous utiliserons les meilleurs outils afin de développer ce dernier. <br/><br/>Rappelons qu’un site bien développé sera mieux positionné dans les moteurs de recherches.
-                            La traçabilité est un élément clé dans le travail d’un développeur. Pour ce faire, notre code sera expliqué en détail dans le but d'être maintenable et évolutif.
+                            La traçabilité est un élément clé dans le travail d’un développeur. Pour ce faire, notre code sera expliqué en détail dans le but d&apos;être maintenable et évolutif.
                         </p>
                     </div>
                 </div>
