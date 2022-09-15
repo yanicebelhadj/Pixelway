@@ -148,9 +148,9 @@ const HomePage = () =>{
                 <div className={styles.accrocheText}>
                     <h3>Choisissez Pixelway pour votre projet web</h3>
                     <ul>
-                        <li><Check /><p>Pixelway est l’agence de création de site web qui vous fera vivre une experience utilisateur unique et sur-mesure.</p></li>
+                        <li><Check /><p>Pixelway est l’agence de création de site web qui vous fera vivre une expérience utilisateur unique et sur mesure.</p></li>
                         <li><Check /><p>Bénéficiez d’un accompagnement de A à Z avec notre équipe passionnée de challenge.</p></li>
-                        <li><Check /><p>Concentrez-vous sur l’essentiel : le developpement de votre société. Confiez votre digital à des experts disponibles pour concevoir vos projets. </p></li>
+                        <li><Check /><p>Concentrez-vous sur l’essentiel : le développement de votre société. Confiez votre croissance à des experts disponibles pour concevoir vos projets. </p></li>
                     </ul>
                 </div>
             </div>
@@ -182,7 +182,7 @@ const HomePage = () =>{
 
                   <div className={styles.qualite}>
                       <Image id={styles.iconQualite} src={Heart} alt="Transparent"/>
-                      <h3>Transparant</h3>
+                      <h3>Transparent</h3>
                       <p>
                           Aucune surprise. Nous vous tiendrons informé de l’avancé de votre projet à 
                           chaque étape pour que vous puissiez intervenir à tout moment dans le process 
@@ -225,7 +225,7 @@ const HomePage = () =>{
                     </div>
                     <p>
                         Savez-vous qu’un webdesigner n’intervient pas seulement sur l’aspect esthétique, mais aussi et surtout sur l’ergonomie de 
-                        votre site ? Nous sommes <strong>spécialisés en UX/ UI Design</strong> et toutes nos proposons sont dans l’air du temps.  
+                        votre site ? Nous sommes <strong>spécialisés en UX/ UI Design</strong> et toutes nos propositions sont dans l’air du temps.  
                     </p>
                 </div>
 
@@ -266,7 +266,7 @@ const HomePage = () =>{
                   <div className={styles.ChevronRight}>
                     <ChevronRight />
                   </div>
-                  <p className={ uxRecherche ? styles.souligne : ""} onClick={UxRechercheVisible} >Recherche UX</p>
+                  <p className={ uxRecherche ? styles.souligne : ""} onClick={UxRechercheVisible} >UX Research</p>
                   <div className={styles.ChevronRight}>
                     <ChevronRight />
                   </div>
@@ -274,7 +274,7 @@ const HomePage = () =>{
                   <div className={styles.ChevronRight}>
                     <ChevronRight />
                   </div>
-                  <p className={ developpement ? styles.souligne : ""} onClick={DeveloppementVisible} >Developpement</p>
+                  <p className={ developpement ? styles.souligne : ""} onClick={DeveloppementVisible} >Développement</p>
                   <div className={styles.ChevronRight}>
                     <ChevronRight />
                   </div>
@@ -313,8 +313,8 @@ const HomePage = () =>{
                           <p>
                             Dans cette phase, nous nous concentrerons sur vos clients, vos futurs utilisateurs. La recherche UX servira à découvrir leurs 
                             besoins, leurs attentes ainsi que leurs possibles frustrations. Elle est nécessaire pour proposer un site qui s’adapte parfaitement 
-                            à votre business ainsi qu’aux besoins des clients. Cela se traduit par des entretiens utilisateur, des tests utilisateurs, des ateliers 
-                            UX, la création de persona et d’autres solutions pour connaitre parfaitement vos clients.
+                            à votre business ainsi qu’aux besoins des clients. <br/><br/>Cela se traduit par des entretiens utilisateur, des tests utilisateurs, des ateliers 
+                            UX, la création de personas et d’autres solutions pour connaître parfaitement vos clients.
                           </p>
                       </div>
                   </div>
@@ -328,10 +328,10 @@ const HomePage = () =>{
                               <div className={styles.lineApresText} ></div>
                           </div>
                           <p>
-                            Après les phases respectives de recherche et de découverte il est temps de se focaliser sur le design de votre site. 
-                            La première étape sera celle de la wireframe qui permettra de créer l’architecture de la plateforme. Après une validation 
-                            conjointe des wireframes à travers des ateliers, nous passerons à la réalisation des maquettes.Les maîtres mots du web design 
-                            sont l’expérience utilisateur, l’ergonomie et l’interactivité. Nous mettrons tout en œuvre pour que votre site soit unique, accessible et s’inscrive dans l’ère du temps.
+                            Après les phases respectives de recherche et de découverte, il est temps de se focaliser sur le design de votre site. 
+                            La première étape consiste à créer des wireframes pour réaliser l’architecture de la plateforme. Après une validation 
+                            conjointe des wireframes à travers des ateliers, nous passerons à la réalisation des maquettes. <br/><br/>Les maîtres-mots du web design 
+                            sont l’expérience utilisateur, l’ergonomie et l’interactivité. Nous mettrons tout en œuvre pour que votre site soit unique, accessible et s’inscrive dans l’air du temps.
                           </p>
                       </div>
                   </div>
@@ -345,9 +345,9 @@ const HomePage = () =>{
                               <div className={styles.lineApresText} ></div>
                           </div>
                           <p>
-                            Un site se doit d’être à l’image de l’entreprise c’est-à-dire professionnel. L’objectif final est donc que le site soit à la fois le plus fluide et performant possible. 
-                            De ce fait, nous utiliserons les meilleurs outils afin de développer ce dernier. Rappelons qu’un site bien développé sera plus facilement bien positionné dans les moteurs de recherches.
-                            La traçabilité est un élément clé dans le travail d’un développeur, pour ce faire notre code sera expliqué en détail, le but étant que le code soit maintenable et évolutif.
+                            Un site se doit d’être à l’image de l’entreprise, c’est-à-dire professionnel. L’objectif final est donc que le site soit à la fois le plus fluide et performant possible. 
+                            De ce fait, nous utiliserons les meilleurs outils afin de développer ce dernier. <br/><br/>Rappelons qu’un site bien développé sera mieux positionné dans les moteurs de recherches.
+                            La traçabilité est un élément clé dans le travail d’un développeur. Pour ce faire, notre code sera expliqué en détail dans le but d'être maintenable et évolutif.
                           </p>
                       </div>
                   </div>
@@ -361,7 +361,7 @@ const HomePage = () =>{
                               <div className={styles.lineApresText} ></div>
                           </div>
                           <p>
-                            Créer un beau site web ne suffit pas. Il faut que vous ainsi que vos équipes soyez capable de 
+                            Créer un beau site web ne suffit pas. Il faut que vous, ainsi que vos équipes soyez capable de 
                             le manipuler simplement. Après le développement de votre site, nous ferons des séances de formations 
                             courtes et concises pour que vous ayez une maîtrise totale de votre produit. 
                           </p>
@@ -378,8 +378,7 @@ const HomePage = () =>{
                           </div>
                           <p>
                             La pérennité, la performance ainsi que la fidélisation de vos clients sont des données d’entrées importantes pour les utilisateurs de votre site web. Ainsi, nous proposons une maintenance du site.  
-                            Les opérations de maintenance se traduisent par les différentes actions permettant l’optimisation du site qui offre alors une expérience utilisateur optimale aux visiteurs. 
-                            La maintenance comporte plusieurs avantages, effectivement, à travers cette dernière, les aspects purement techniques sont garanties à long termes. 
+                            <br/><br/>Les opérations de maintenance se traduisent par les différentes actions permettant l’optimisation du site qui offre alors une expérience utilisateur optimale aux visiteurs. 
                           </p>
                       </div>
                   </div>
@@ -413,7 +412,7 @@ const HomePage = () =>{
 
             <div className={styles.etape}>
                 <div className={`${styles.title} ${uxRecherche ? styles.souligne : ""}`} onClick={UxRechercheVisible}>
-                    <h3 className={`${uxRecherche ? styles.souligne : ""}`}>Ux Recherche</h3>
+                    <h3 className={`${uxRecherche ? styles.souligne : ""}`}>UX Research</h3>
                     <div className={styles.ChevronBottom}><ChevronBottom /></div>
                 </div>
 
@@ -424,8 +423,8 @@ const HomePage = () =>{
                         <p>
                             Dans cette phase, nous nous concentrerons sur vos clients, vos futurs utilisateurs. La recherche UX servira à découvrir leurs 
                             besoins, leurs attentes ainsi que leurs possibles frustrations. Elle est nécessaire pour proposer un site qui s’adapte parfaitement 
-                            à votre business ainsi qu’aux besoins des clients. Cela se traduit par des entretiens utilisateur, des tests utilisateurs, des ateliers 
-                            UX, la création de persona et d’autres solutions pour connaitre parfaitement vos clients.
+                            à votre business ainsi qu’aux besoins des clients. <br/><br/>Cela se traduit par des entretiens utilisateur, des tests utilisateurs, des ateliers 
+                            UX, la création de personas et d’autres solutions pour connaître parfaitement vos clients.
                         </p>
                     </div>
                 </div>
@@ -444,10 +443,10 @@ const HomePage = () =>{
                     <div className={styles.etapeText}>
                         <p id={styles.title}>Troisième étape</p>
                         <p>
-                            Après les phases respectives de recherche et de découverte il est temps de se focaliser sur le design de votre site. 
-                            La première étape sera celle de la wireframe qui permettra de créer l’architecture de la plateforme. Après une validation 
-                            conjointe des wireframes à travers des ateliers, nous passerons à la réalisation des maquettes.Les maîtres mots du web design 
-                            sont l’expérience utilisateur, l’ergonomie et l’interactivité. Nous mettrons tout en œuvre pour que votre site soit unique, accessible et s’inscrive dans l’ère du temps.
+                            Après les phases respectives de recherche et de découverte, il est temps de se focaliser sur le design de votre site. 
+                            La première étape consiste à créer des wireframes pour réaliser l’architecture de la plateforme. Après une validation 
+                            conjointe des wireframes à travers des ateliers, nous passerons à la réalisation des maquettes. <br/><br/>Les maîtres-mots du web design 
+                            sont l’expérience utilisateur, l’ergonomie et l’interactivité. Nous mettrons tout en œuvre pour que votre site soit unique, accessible et s’inscrive dans l’air du temps.
                         </p>
                     </div>
                 </div>
@@ -457,7 +456,7 @@ const HomePage = () =>{
 
             <div className={styles.etape}>
                 <div className={`${styles.title} ${developpement ? styles.souligne : ""}`} onClick={DeveloppementVisible}>
-                    <h3 className={`${developpement ? styles.souligne : ""}`}>Developpement</h3>
+                    <h3 className={`${developpement ? styles.souligne : ""}`}>Développement</h3>
                     <div className={styles.ChevronBottom}><ChevronBottom /></div>
                 </div>
 
@@ -466,9 +465,9 @@ const HomePage = () =>{
                     <div className={styles.etapeText}>
                         <p id={styles.title}>Quatrième étape</p>
                         <p>
-                            Un site se doit d’être à l’image de l’entreprise c’est-à-dire professionnel. L’objectif final est donc que le site soit à la fois le plus fluide et performant possible. 
-                            De ce fait, nous utiliserons les meilleurs outils afin de développer ce dernier. Rappelons qu’un site bien développé sera plus facilement bien positionné dans les moteurs de recherches.
-                            La traçabilité est un élément clé dans le travail d’un développeur, pour ce faire notre code sera expliqué en détail, le but étant que le code soit maintenable et évolutif.
+                            Un site se doit d’être à l’image de l’entreprise, c’est-à-dire professionnel. L’objectif final est donc que le site soit à la fois le plus fluide et performant possible. 
+                            De ce fait, nous utiliserons les meilleurs outils afin de développer ce dernier. <br/><br/>Rappelons qu’un site bien développé sera mieux positionné dans les moteurs de recherches.
+                            La traçabilité est un élément clé dans le travail d’un développeur. Pour ce faire, notre code sera expliqué en détail dans le but d'être maintenable et évolutif.
                         </p>
                     </div>
                 </div>
@@ -487,7 +486,7 @@ const HomePage = () =>{
                     <div className={styles.etapeText}>
                         <p id={styles.title}>Cinquième étape</p>
                         <p>
-                            Créer un beau site web ne suffit pas. Il faut que vous ainsi que vos équipes soyez capable de 
+                            Créer un beau site web ne suffit pas. Il faut que vous, ainsi que vos équipes soyez capable de 
                             le manipuler simplement. Après le développement de votre site, nous ferons des séances de formations 
                             courtes et concises pour que vous ayez une maîtrise totale de votre produit. 
                         </p>
@@ -509,8 +508,7 @@ const HomePage = () =>{
                         <p id={styles.title}>Sixième étape</p>
                         <p>
                             La pérennité, la performance ainsi que la fidélisation de vos clients sont des données d’entrées importantes pour les utilisateurs de votre site web. Ainsi, nous proposons une maintenance du site.  
-                            Les opérations de maintenance se traduisent par les différentes actions permettant l’optimisation du site qui offre alors une expérience utilisateur optimale aux visiteurs. 
-                            La maintenance comporte plusieurs avantages, effectivement, à travers cette dernière, les aspects purement techniques sont garanties à long termes. 
+                            <br/><br/>Les opérations de maintenance se traduisent par les différentes actions permettant l’optimisation du site qui offre alors une expérience utilisateur optimale aux visiteurs. 
                         </p>
                     </div>
                 </div>
