@@ -8,9 +8,9 @@ export default function handler(req, res) {
 	}
 
 	// Variables
-	const { nom, mail, telephone, contenu } = req.body;
+	const { prenom, nom, mail, telephone, contenu } = req.body;
 
-	if (!nom || !mail || !telephone || !contenu) {
+	if (!prenom || !nom || !mail || !telephone || !contenu) {
 		res.status(400).json({ message: "INVALID_PARAMETER" });
 		return;
 	}
@@ -34,6 +34,7 @@ export default function handler(req, res) {
 
 	// Donner la clé API
 	sgMail.setApiKey(process.env.KEY_SENDGRID);	
+	
 
 	// Création du message
 	const sendGridMailClient = {
@@ -48,6 +49,7 @@ export default function handler(req, res) {
 		from: "contact@pixelway.fr",
 		subject: `Nouveau prospect`,
         html: `	<p>
+					Prénom: ${prenom}<br>
 					Nom: ${nom}<br>
 					Mail: <a href=mailto(${mail})>${mail}</a><br>
 					Téléphone: ${telephone}<br>
