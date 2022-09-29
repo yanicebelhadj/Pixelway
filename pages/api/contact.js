@@ -33,7 +33,7 @@ export default function handler(req, res) {
 		.replace(/<(?!br\s*\/?)[^>]+>/g, ""); // supprime tout le html en autorisant uniquement les balises <br>
 
 	// Donner la clé API
-	sgMail.setApiKey(process.env.KEY_SENDGRID);	
+	sgMail.setApiKey(process.env.KEY_SENDGRID);
 	
 
 	// Création du message
@@ -41,7 +41,15 @@ export default function handler(req, res) {
 		to: mail,
 		from: "contact@pixelway.fr",
 		subject: `Mail de confirmation - Pixelway`,
-        html: `<p>Salut ${nom}, <br><br>Ta demande a bien été prise en compte. Nous reviendrons vers toi le plus rapidement possible.</p>`
+        html: `<p>Salut ${prenom}, <br><br>
+		Nous avons bien pris note de ta demande.<br>
+		Nous reviendrons vers toi sous 48h.<br><br>
+		Si tu n'as pas de retour, n'hésites pas à nous contacter au +33 6 67 93 46 58<br>
+		Dans l'attente de te rencontrez, tu peux  nous communiquer toutes informations utiles par e-mail à l'adresse : contact@pixelway.fr<br><br>
+		Toute l'équipe de Pixelway te remercie pour ta confiance.<br><br>
+		Cordialement,<br><br>
+		L'équipe Pixelway
+		</p>`
 	};
 
 	const sendGridMailPixelway = {
