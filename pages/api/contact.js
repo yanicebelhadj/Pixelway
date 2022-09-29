@@ -68,8 +68,7 @@ export default function handler(req, res) {
 	// SendGrid
 	(async () => {
 		try {
-			await sgMail.send(sendGridMailPixelway)
-			sgMail.send(sendGridMailClient)
+			await sgMail.send([sendGridMailPixelway,sendGridMailClient])
 			res.status(200).json({
 				message: "EMAIL_SENDED_SUCCESSFULLY",
 			});
