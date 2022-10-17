@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 
 import Image from 'next/image'
 
@@ -7,7 +7,7 @@ import Footer from '../components/Footer.js';
 import Modal from './contact.js'
 
 // import required modules
-import { Pagination, Navigation, Scrollbar } from "swiper";
+import { Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -65,7 +65,7 @@ import Swiper_WorldMy2 from "../media/Swiper_WorldMy2.png"
 
 import styles from '../styles/Realisations.module.css'
 
-function Realisations(){
+const Realisations = () =>{
     const[openModal, setOpenModal] = useState(false);
 
     const [sport, setSport] = useState(false);
