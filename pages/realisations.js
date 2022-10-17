@@ -65,7 +65,7 @@ import Swiper_WorldMy2 from "../media/Swiper_WorldMy2.png"
 
 import styles from '../styles/Realisations.module.css'
 
-function realisations(){
+function Realisations(){
     const[openModal, setOpenModal] = useState(false);
 
     const [sport, setSport] = useState(false);
@@ -434,4 +434,4 @@ function realisations(){
     ) 
 }
 
-export default realisations
+export default Realisations
