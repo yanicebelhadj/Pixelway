@@ -72,26 +72,6 @@ function realisations(){
     const [automobile, setAutomobile] = useState(false);
     const [juridique, setJuridique] = useState(true);
 
-    // componentDidMount() {
-    //     window.addEventListener('scroll', this.listenToScroll)
-    // }
-      
-    // componentWillUnmount() {
-    //     window.removeEventListener('scroll', this.listenToScroll)
-    // }
-      
-    // listenToScroll = () => {
-    //     const winScroll = document.body.scrollTop || document.documentElement.scrollTop
-        
-    //     const height = document.documentElement.scrollHeight - document.documentElement.clientHeight
-        
-    //     const scrolled = winScroll / height
-        
-    //     this.setState({
-    //         theposition: scrolled,
-    //     })
-    // }
-
     const SportVisible = () => {
         setSport(true);
         setAutomobile(false);
@@ -447,6 +427,7 @@ function realisations(){
                 </section>
 
                 {openModal && <Modal openModal={setOpenModal} />} 
+                
                 <Footer />
             </div>
         </div>
