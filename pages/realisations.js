@@ -170,10 +170,10 @@ const Realisations = () =>{
                             <div className={styles.asnieresVolleyText}>
                                 <h2 className={styles.h2AsnieresVolley}>Asnières Volley</h2>
                                 <p>
-                                    Le site web du club de volley ball d’Asnières-sur-Seine permet à l'association de <span className={styles.markerAsnieresVolley}>présenter</span> leurs informations 
-                                    (histoire du club, membre des équipes, entraineurs, tarifs, horaires d'entrainements, ...).<br/><br/>
+                                    Le site web du club de volley ball d’Asnières-sur-Seine permet à l&apos;association de <span className={styles.markerAsnieresVolley}>présenter</span> leurs informations 
+                                    (histoire du club, membre des équipes, entraineurs, tarifs, horaires d&apos;entrainements, ...).<br/><br/>
 
-                                    Le contenu est <span className={styles.markerAsnieresVolley}>modifiable</span> par les membres de l'association. Le développement d'une 
+                                    Le contenu est <span className={styles.markerAsnieresVolley}>modifiable</span> par les membres de l&apos;association. Le développement d&apos;une 
                                     API permettant de <span className={styles.markerAsnieresVolley}>scrapper</span> les informations de la fédération nationale de volley 
                                     ball a été faite pour que les scores ainsi que les matchs à venir soient visible depuis le site.
                                 </p>
@@ -234,10 +234,10 @@ const Realisations = () =>{
                         <div className={styles.textArea}>
                             <h2 className={styles.h2AsnieresVolley}>Asnières Volley</h2>
                             <p>
-                                Le site web du club de volley-ball d’Asnières-sur-Seine permet à l'association de <span className={styles.markerAsnieresVolley}>présenter</span> leurs 
-                                informations (histoire du club, membre des équipes, entraîneur, tarifs, horaires d'entraînements, ...).<br/><br/>
+                                Le site web du club de volley-ball d’Asnières-sur-Seine permet à l&apos;association de <span className={styles.markerAsnieresVolley}>présenter</span> leurs 
+                                informations (histoire du club, membre des équipes, entraîneur, tarifs, horaires d&apos;entraînements, ...).<br/><br/>
 
-                                Le contenu est <span className={styles.markerAsnieresVolley}>modifiable</span> par les membres de l'association. Le développement d'une API permettant 
+                                Le contenu est <span className={styles.markerAsnieresVolley}>modifiable</span> par les membres de l&apos;association. Le développement d&apos;une API permettant 
                                 de <span className={styles.markerAsnieresVolley}>scrapper</span> les informations de la fédération nationale de volley-ball a été pour que les scores 
                                 ainsi que les matchs à venir soient depuis le site.
                             </p>
