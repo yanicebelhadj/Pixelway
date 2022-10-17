@@ -170,7 +170,7 @@ const Realisations = () =>{
                             <div className={styles.asnieresVolleyText}>
                                 <h2 className={styles.h2AsnieresVolley}>Asnières Volley</h2>
                                 <p>
-                                    Le site web du club de volley ball d’Asnières-sur-Seine permet à l&apos;association de <span className={styles.markerAsnieresVolley}>présenter</span> leurs informations 
+                                    Le site web du club de volley ball d&apos;Asnières-sur-Seine permet à l&apos;association de <span className={styles.markerAsnieresVolley}>présenter</span> leurs informations 
                                     (histoire du club, membre des équipes, entraineurs, tarifs, horaires d&apos;entrainements, ...).<br/><br/>
 
                                     Le contenu est <span className={styles.markerAsnieresVolley}>modifiable</span> par les membres de l&apos;association. Le développement d&apos;une 
@@ -183,7 +183,7 @@ const Realisations = () =>{
                                 <h2 className={styles.h2CaptainContrat}>Captain Contrat</h2>
                                 <p>
                                     Captain contrat <span className={styles.markerCaptainContrat}>accompagne</span> les entrepreneurs dans toutes 
-                                    les démarches juridiques de la vie d’une entreprise. <br/><br/>
+                                    les démarches juridiques de la vie d&apos;une entreprise. <br/><br/>
 
                                     Cela permet de réaliser toutes les démarches <span className={styles.markerCaptainContrat}>100% en ligne</span> avec un espace client, 
                                     où des juristes et avocats dédiés pourront réaliser toutes les démarches juridiques du client.
@@ -192,7 +192,7 @@ const Realisations = () =>{
                             <div className={styles.vroomlyText}>
                                 <h2 className={styles.h2Vroomly}>Vroomly</h2>
                                 <p>
-                                    Vroomly est une plateforme de mise en relation entre clients et garagistes. Les utilisateurs peuvent s’y rendre pour comparer les 
+                                    Vroomly est une plateforme de mise en relation entre clients et garagistes. Les utilisateurs peuvent s&apos;y rendre pour comparer les 
                                     garages en termes de <span className={styles.markerVroomly}>prix</span> et de <span className={styles.markerVroomly}>distance</span>. 
                                     Ils pourront ensuite vérifier la réputation de ce garage pour finalement choisir un créneau et prendre rendez-vous.<br/><br/>
 
@@ -220,7 +220,7 @@ const Realisations = () =>{
                         <div className={styles.textArea}>
                             <h2 className={styles.h2Vroomly}>Vroomly</h2>
                             <p>
-                                Vroomly est une plateforme de mise en relation entre clients et garagistes. Les utilisateurs peuvent s’y rendre pour comparer les 
+                                Vroomly est une plateforme de mise en relation entre clients et garagistes. Les utilisateurs peuvent s&apos;y rendre pour comparer les 
                                 garages en termes de <span className={styles.markerVroomly}>prix</span> et de <span className={styles.markerVroomly}>distance</span>. 
                                 Ils pourront ensuite vérifier la réputation de ce garage pour finalement choisir un créneau et prendre rendez-vous.<br/><br/>
 
@@ -234,7 +234,7 @@ const Realisations = () =>{
                         <div className={styles.textArea}>
                             <h2 className={styles.h2AsnieresVolley}>Asnières Volley</h2>
                             <p>
-                                Le site web du club de volley-ball d’Asnières-sur-Seine permet à l&apos;association de <span className={styles.markerAsnieresVolley}>présenter</span> leurs 
+                                Le site web du club de volley-ball d&apos;Asnières-sur-Seine permet à l&apos;association de <span className={styles.markerAsnieresVolley}>présenter</span> leurs 
                                 informations (histoire du club, membre des équipes, entraîneur, tarifs, horaires d&apos;entraînements, ...).<br/><br/>
 
                                 Le contenu est <span className={styles.markerAsnieresVolley}>modifiable</span> par les membres de l&apos;association. Le développement d&apos;une API permettant 
@@ -266,7 +266,7 @@ const Realisations = () =>{
                             <h2 className={styles.h2CaptainContrat}>Captain Contrat</h2>
                             <p>
                                 Captain contrat <span className={styles.markerCaptainContrat}>accompagne</span> les entrepreneurs dans toutes 
-                                les démarches juridiques de la vie d’une entreprise. <br/><br/>
+                                les démarches juridiques de la vie d&apos;une entreprise. <br/><br/>
 
                                 Cela permet de réaliser toutes les démarches <span className={styles.markerCaptainContrat}>100% en ligne</span> avec un espace client, 
                                 où des juristes et avocats dédiés pourront réaliser toutes les démarches juridiques du client.
