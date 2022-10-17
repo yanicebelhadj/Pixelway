@@ -479,54 +479,7 @@
         display: none;
     }
 
-    footer{
-        display: flex;
-        flex-direction: column;
-        padding: 80px 0 64px;
-        .Logo{
-            margin-bottom: 2rem;
-            text-align: center;
-        }
 
-        .contacts{
-            display: grid;
-            grid-template-rows: repeat(2,55px);
-            gap: 1rem;
-            margin-bottom: 2rem;
-            p{
-                font-size: 24px;
-                font-weight: 700;
-                line-height: 55px;
-                letter-spacing: 0em;
-                text-align: center;
-            }
-        }
-        
-        .reseaux{
-            display: grid;
-            justify-content: center;
-            grid-template-columns: repeat(3,50px);
-            gap: 94px;
-            margin-bottom: 5rem;
-            .LinkedIn, .Dribbble, .Instagram{
-                justify-content: center !important;
-            }
-        }
-
-        .documentsJuridiques{
-            display: grid;
-            grid-template-columns: repeat(2,128px);
-            justify-content: center;
-            gap: 48px;
-            p{
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 44px;
-                letter-spacing: 0em;
-                text-align: left;
-            }
-        }
-    }
 
     .Modal{
         display: flex;

@@ -1,0 +1,47 @@
+.Footer footer {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0 64px;
+}
+.Footer footer .Logo {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.Footer footer .contacts {
+  display: grid;
+  grid-template-rows: repeat(2, 55px);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.Footer footer .contacts p {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 55px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.Footer footer .reseaux {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 50px);
+  gap: 94px;
+  margin-bottom: 5rem;
+}
+.Footer footer .reseaux .LinkedIn, .Footer footer .reseaux .Dribbble, .Footer footer .reseaux .Instagram {
+  justify-content: center !important;
+}
+.Footer footer .documentsJuridiques {
+  display: grid;
+  grid-template-columns: repeat(2, 128px);
+  justify-content: center;
+  gap: 48px;
+}
+.Footer footer .documentsJuridiques p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+/*# sourceMappingURL=Footer.module.css.map */
