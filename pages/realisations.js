@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import Image from 'next/image'
+import Head from 'next/head'
 
 import Header from '../components/Header.js';
 import Footer from '../components/Footer.js';
@@ -91,346 +92,356 @@ const Realisations = () =>{
     };
 
     return(
-        <div className={styles.realisations}>
-            <div className={styles.containerSplashScreen}>
-                <div className={styles.containerh1}>
-                    <h1>Votre <span className={styles.marker}>site web</span> sur mesure</h1>
-                </div>
-                
-                <div className={styles.containerImage}>
-                <Image src={LoaderCircle} alt="Loader-Circle" />
-                </div>
+        <>
+            <Head>
+                <meta charSet="utf-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <title>Pixelway - Nos Réalisations</title>
+                <meta name = "Pixelway" content = "On créé votre site web de A à Z" />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
 
-                <div className={styles.blueBlock}></div>
-            </div>
-
-            <div className={styles.containerRealisations}>
-
-                <Header openModal={setOpenModal} />
-
-                <section id={styles.mainSection}>
-                    <h1>Découvrez nos <br/><span>Réalisations</span> sur mesure</h1>
-                    <div className={styles.description}><Image src={shareArrowOutline} alt="Indication regarder plus bas"/><p>Retrouvez nos réalisations web, entièrement réalisées à partir de zéro.</p></div>
-                </section>
-
-                <section id={styles.introRealisations}>
-                    <p>
-                        Tous nos sites web sont réalisés à partir de maquettes sur Figma conçues par <strong>notre Poduct Designer.</strong><br/><br/>
-
-                        Notre développeur se charge de <strong>mettre en place votre site web</strong> avec les fonctionnalités nécessaires à votre développement. 
-                        Tout est inspiré de <strong>votre marque et de vos utilisateurs</strong> pour que votre plateforme soit unique.               
-                    </p>
-
-                    <div className={styles.containerImage}>
-                        <Image className={styles.IntroRealisation1} src={IntroRealisation1} alt="Réalisations 1"/>
-                        <Image className={styles.IntroRealisation2} src={IntroRealisation2} alt="Réalisations 2"/>
-                        <Image className={styles.IntroRealisation3} src={IntroRealisation3} alt="Réalisations 3"/>
-                    </div>
-
-                    <div className={styles.containerImageMobile}>
-                        <Image src={eventailIntroRealisations} alt="eventailIntroRealisations" />
-                    </div>
-
-                </section>
-
-                <section id={styles.realisationsMobile} style={{backgroundImage: `url(${FondBlancRealisations2.src})`,backgroundPosition: "60% 0rem" ,backgroundRepeat:"no-repeat" }}>
-                    <div className={styles.categories}>
-
-                        <div className={styles.category} onClick={SportVisible}>
-                            {sport ? <Image src={SportActive} alt="Sport" /> : <Image src={Sport} alt="Sport" />}
-                            <p className={`${sport ? styles.activeCategory :null}`}>Sport</p>
+            <main>
+                <div className={styles.realisations}>
+                    <div className={styles.containerSplashScreen}>
+                        <div className={styles.containerh1}>
+                            <h1>Votre <span className={styles.marker}>site web</span> sur mesure</h1>
                         </div>
-
-                        <div className={styles.category} onClick={JuridiqueVisible}>
-                            {juridique ? <Image src={JuridiqueActive} alt="Juridique" /> : <Image src={Juridique} alt="Juridique" />}
-                            <p className={`${juridique ? styles.activeCategory :null}`}>Juridique</p>
-                        </div>
-
-                        <div className={styles.category} onClick={AutomobileVisible}>
-                            {automobile ? <Image src={AutomobileActive} alt="Automobile" /> : <Image src={Automobile} alt="Automobile" />}
-                            <p className={`${automobile ? styles.activeCategory :null}`}>Automobile</p>
-                        </div>
-
-                    </div>
-
-                    <div className={styles.containerPhone}>
                         
-                        {
-                            sport ?
-                            <Image src={AsnieresVolleyMobile} alt="Asnieres Volley" /> : 
-                            juridique ?
-                            <Image src={CaptainContratMobile} alt="Captain Contrat" /> : 
-                            <Image src={VroomlyMobile} alt="Vroomly" />}
-
-                    </div>
-
-                    <div className={styles.textAreaMobile}>
-                        {
-                            sport ?
-                            <div className={styles.asnieresVolleyText}>
-                                <h2 className={styles.h2AsnieresVolley}>Asnières Volley</h2>
-                                <p>
-                                    Le site web du club de volley ball d&apos;Asnières-sur-Seine permet à l&apos;association de <span className={styles.markerAsnieresVolley}>présenter</span> leurs informations 
-                                    (histoire du club, membre des équipes, entraineurs, tarifs, horaires d&apos;entrainements, ...).<br/><br/>
-
-                                    Le contenu est <span className={styles.markerAsnieresVolley}>modifiable</span> par les membres de l&apos;association. Le développement d&apos;une 
-                                    API permettant de <span className={styles.markerAsnieresVolley}>scrapper</span> les informations de la fédération nationale de volley 
-                                    ball a été faite pour que les scores ainsi que les matchs à venir soient visible depuis le site.
-                                </p>
-                            </div> : 
-                            juridique ?
-                            <div className={styles.captainContratText}>
-                                <h2 className={styles.h2CaptainContrat}>Captain Contrat</h2>
-                                <p>
-                                    Captain contrat <span className={styles.markerCaptainContrat}>accompagne</span> les entrepreneurs dans toutes 
-                                    les démarches juridiques de la vie d&apos;une entreprise. <br/><br/>
-
-                                    Cela permet de réaliser toutes les démarches <span className={styles.markerCaptainContrat}>100% en ligne</span> avec un espace client, 
-                                    où des juristes et avocats dédiés pourront réaliser toutes les démarches juridiques du client.
-                                </p>
-                            </div> : 
-                            <div className={styles.vroomlyText}>
-                                <h2 className={styles.h2Vroomly}>Vroomly</h2>
-                                <p>
-                                    Vroomly est une plateforme de mise en relation entre clients et garagistes. Les utilisateurs peuvent s&apos;y rendre pour comparer les 
-                                    garages en termes de <span className={styles.markerVroomly}>prix</span> et de <span className={styles.markerVroomly}>distance</span>. 
-                                    Ils pourront ensuite vérifier la réputation de ce garage pour finalement choisir un créneau et prendre rendez-vous.<br/><br/>
-
-                                    En plus de cette partie <span className={styles.markerVroomly}>BtoC</span>, Vroomly fournit les pièces pour le garage et des interfaces <span className={styles.markerVroomly}>BtoB</span> sont aussi présentes sur cette plateforme.
-                                </p>
-                            </div>
-                        }
-
-                        
-
-                    </div>
-                </section>
-                
-                <section id={styles.realisations} style={{backgroundImage: `url(${FondBlancRealisations.src})`,backgroundPosition: "70% 5rem", backgroundRepeat:"no-repeat" }}>
-               
-                    <div className={styles.realisation}>
-                        <div className={styles.visualRealisation}>
-                            <div className={styles.formatDesktop}>
-                                <Image src={VroomlyDesktop} alt="Vroomly" />
-                            </div>
-                            <div className={styles.formatMobile}>
-                                <Image src={VroomlyMobile} alt="Vroomly" />
-                            </div>
+                        <div className={styles.containerImage}>
+                        <Image src={LoaderCircle} alt="Loader-Circle" />
                         </div>
-                        <div className={styles.textArea}>
-                            <h2 className={styles.h2Vroomly}>Vroomly</h2>
+
+                        <div className={styles.blueBlock}></div>
+                    </div>
+
+                    <div className={styles.containerRealisations}>
+
+                        <Header openModal={setOpenModal} />
+
+                        <section id={styles.mainSection}>
+                            <h1>Découvrez nos <br/><span>Réalisations</span> sur mesure</h1>
+                            <div className={styles.description}><Image src={shareArrowOutline} alt="Indication regarder plus bas"/><p>Retrouvez nos réalisations web, entièrement réalisées à partir de zéro.</p></div>
+                        </section>
+
+                        <section id={styles.introRealisations}>
                             <p>
-                                Vroomly est une plateforme de mise en relation entre clients et garagistes. Les utilisateurs peuvent s&apos;y rendre pour comparer les 
-                                garages en termes de <span className={styles.markerVroomly}>prix</span> et de <span className={styles.markerVroomly}>distance</span>. 
-                                Ils pourront ensuite vérifier la réputation de ce garage pour finalement choisir un créneau et prendre rendez-vous.<br/><br/>
+                                Tous nos sites web sont réalisés à partir de maquettes sur Figma conçues par <strong>notre Poduct Designer.</strong><br/><br/>
 
-                                En plus de cette partie <span className={styles.markerVroomly}>BtoC</span>, Vroomly fournit les pièces pour le garage et des interfaces
-                                <span className={styles.markerVroomly}> BtoB</span> sont aussi présentes sur cette plateforme.
+                                Notre développeur se charge de <strong>mettre en place votre site web</strong> avec les fonctionnalités nécessaires à votre développement. 
+                                Tout est inspiré de <strong>votre marque et de vos utilisateurs</strong> pour que votre plateforme soit unique.               
                             </p>
-                        </div>
-                    </div>
-
-                    <div className={styles.realisation}>
-                        <div className={styles.textArea}>
-                            <h2 className={styles.h2AsnieresVolley}>Asnières Volley</h2>
-                            <p>
-                                Le site web du club de volley-ball d&apos;Asnières-sur-Seine permet à l&apos;association de <span className={styles.markerAsnieresVolley}>présenter</span> leurs 
-                                informations (histoire du club, membre des équipes, entraîneur, tarifs, horaires d&apos;entraînements, ...).<br/><br/>
-
-                                Le contenu est <span className={styles.markerAsnieresVolley}>modifiable</span> par les membres de l&apos;association. Le développement d&apos;une API permettant 
-                                de <span className={styles.markerAsnieresVolley}>scrapper</span> les informations de la fédération nationale de volley-ball a été pour que les scores 
-                                ainsi que les matchs à venir soient depuis le site.
-                            </p>
-                        </div>
-
-                        <div className={styles.visualRealisation}>
-                            <div className={styles.formatDesktop}>
-                                <Image src={AsnieresVolleyDesktop} alt="Asnieres Volley" />
-                            </div>
-                            <div className={styles.formatMobile}>
-                                <Image src={AsnieresVolleyMobile} alt="Asnieres Volley" />
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className={styles.realisation}>
-                        <div className={styles.visualRealisation}>
-                            <div className={styles.formatDesktop}>
-                                <Image src={CaptainContratDesktop} alt="Captain Contrat" />
-                            </div>
-                            <div className={styles.formatMobile}>
-                                <Image src={CaptainContratMobile} alt="Captain Contrat" />
-                            </div>
-                        </div>
-                        <div className={styles.textArea}>
-                            <h2 className={styles.h2CaptainContrat}>Captain Contrat</h2>
-                            <p>
-                                Captain contrat <span className={styles.markerCaptainContrat}>accompagne</span> les entrepreneurs dans toutes 
-                                les démarches juridiques de la vie d&apos;une entreprise. <br/><br/>
-
-                                Cela permet de réaliser toutes les démarches <span className={styles.markerCaptainContrat}>100% en ligne</span> avec un espace client, 
-                                où des juristes et avocats dédiés pourront réaliser toutes les démarches juridiques du client.
-                            </p>
-                        </div>
-                    </div>
-
-                </section>
-
-                <section id={styles.autresRealisations} style={{backgroundImage: `url(${FondBlancRealisations2.src})`, backgroundSize:"100% 100%;", backgroundPositionY: "0rem", backgroundRepeat:"no-repeat" }}>
-                    
-                    <h2>AUTRES <span>RÉALISATIONS</span></h2>
-                    
-                    <div className={styles.introMobile}>
-
-                        <div className={styles.containerTel}>
-                            <Image src={RectangleVert} alt='Rectangle Vert' />
-                            <Image src={TelVert} alt='Tel Vert' />
-                        </div>
-
-                        <div className={styles.containerTel}>
-                            <Image src={RectangleRouge} alt='Rectangle Rouge' />
-                            <Image src={TelRouge} alt='Tel Rouge' />
-                        </div>
-
-                        <div className={styles.containerTel}>
-                            <Image src={RectangleBleu} alt='Rectangle Bleu' />
-                            <Image src={TelBleu} alt='Tel Bleu' />
-                        </div>
-                    </div>
-
-                    <div className={styles.containerIntroMobile_Mobile} >
-                        <div className={styles.introMobile_Mobile}>
-                        <Swiper
-                            slidesPerView={1}
-                            spaceBetween={30}
-                            loop={true}
-                            pagination={{
-                            clickable: true,
-                            }}
-                            navigation={false}
-                            modules={[Pagination]}
-                            className="mySwiper"
-                        >
-                            <SwiperSlide style={{display:"flex", justifyContent:"center"}}>
-                                <Image src={TelVertMobile} alt="TelVertMobile" />
-                            </SwiperSlide>
-
-                            <SwiperSlide style={{display:"flex", justifyContent:"center"}}>
-                                <Image src={TelRougeMobile} alt="TelRougeMobile" />
-                            </SwiperSlide>
-
-                            <SwiperSlide style={{display:"flex", justifyContent:"center"}}>
-                                <Image src={TelBleuMobile} alt="TelBleuMobile" />
-                            </SwiperSlide>
-
-                            
-                        </Swiper>
-
-                            {/* <div className={styles.containerImage}>
-                                <Image src={TelVertMobile} alt="TelVertMobile" />
-                            </div>
 
                             <div className={styles.containerImage}>
-                                <Image src={TelRougeMobile} alt="TelRougeMobile" />
+                                <Image className={styles.IntroRealisation1} src={IntroRealisation1} alt="Réalisations 1"/>
+                                <Image className={styles.IntroRealisation2} src={IntroRealisation2} alt="Réalisations 2"/>
+                                <Image className={styles.IntroRealisation3} src={IntroRealisation3} alt="Réalisations 3"/>
                             </div>
 
-                            <div className={styles.containerImage}>
-                                <Image src={TelBleuMobile} alt="TelBleuMobile" />
-                            </div>               */}
-                        </div>
-                    </div>
+                            <div className={styles.containerImageMobile}>
+                                <Image src={eventailIntroRealisations} alt="eventailIntroRealisations" />
+                            </div>
 
-                    <div className={styles.containerMacbook}>
-                        <div className={styles.macbook}>
-                            <Image src={MacbookSiteRudolph} alt='Réalisation pour Tuyau Flexibles Rudolph' />
-                        </div>
-                    </div>
+                        </section>
 
-                    <div className={styles.containerCarouselRealisations}>
+                        <section id={styles.realisationsMobile} style={{backgroundImage: `url(${FondBlancRealisations2.src})`,backgroundPosition: "60% 0rem" ,backgroundRepeat:"no-repeat" }}>
+                            <div className={styles.categories}>
 
-                        <Swiper
-                            slidesPerView={1}
-                            spaceBetween={30}
-                            loop={true}
-                            pagination={{
-                            clickable: true,
-                            }}
-                            navigation={true}
-                            modules={[Pagination, Navigation]}
-                            className="mySwiper"
-                        >
-                            <SwiperSlide style={{display:"flex", justifyContent:"center"}}>
-                                <Image src={Swiper_Captain_Contrat} alt="Swiper_Captain_Contrat" />
-                            </SwiperSlide>
-                            
-                            <SwiperSlide style={{display:"flex", justifyContent:"center"}}>
-                                <Image src={Swiper_Captain_Contrat2} alt="Swiper_Captain_Contrat" />
-                            </SwiperSlide>
-                            
-                            <SwiperSlide style={{display:"flex", justifyContent:"center"}}>
-                                <Image src={Swiper_Landelpix} alt="Swiper_Landelpix" />
-                            </SwiperSlide>
-                            
-                            <SwiperSlide style={{display:"flex", justifyContent:"center"}}>
-                                <Image src={Swiper_Vroomly} alt="Swiper_Vroomly" />
-                            </SwiperSlide>
+                                <div className={styles.category} onClick={SportVisible}>
+                                    {sport ? <Image src={SportActive} alt="Sport" /> : <Image src={Sport} alt="Sport" />}
+                                    <p className={`${sport ? styles.activeCategory :null}`}>Sport</p>
+                                </div>
 
-                            <SwiperSlide style={{display:"flex", justifyContent:"center"}}>
-                                <Image src={Swiper_WorldMy} alt="Swiper_WorldMy" />
-                            </SwiperSlide>
-                            
-                            <SwiperSlide style={{display:"flex", justifyContent:"center"}}>
-                                <Image src={Swiper_WorldMy2} alt="Swiper_WorldMy" />
-                            </SwiperSlide>
-                        </Swiper>
-  
-                    </div>
+                                <div className={styles.category} onClick={JuridiqueVisible}>
+                                    {juridique ? <Image src={JuridiqueActive} alt="Juridique" /> : <Image src={Juridique} alt="Juridique" />}
+                                    <p className={`${juridique ? styles.activeCategory :null}`}>Juridique</p>
+                                </div>
 
-                    <div className={styles.containerCarouselRealisationsMobile}>
-                        <Swiper
-                            slidesPerView={1}
-                            spaceBetween={30}
-                            loop={true}
-                            pagination={{
-                            clickable: true,
-                            }}
-                            navigation={false}
-                            modules={[Pagination, Navigation]}
-                            className="mySwiper"
-                        >
-                            <SwiperSlide style={{display:"flex", justifyContent:"center"}}>
-                                <Image src={Swiper_Captain_Contrat} alt="Swiper_Captain_Contrat" />
-                            </SwiperSlide>
+                                <div className={styles.category} onClick={AutomobileVisible}>
+                                    {automobile ? <Image src={AutomobileActive} alt="Automobile" /> : <Image src={Automobile} alt="Automobile" />}
+                                    <p className={`${automobile ? styles.activeCategory :null}`}>Automobile</p>
+                                </div>
 
-                            <SwiperSlide style={{display:"flex", justifyContent:"center"}}>
-                                <Image src={Swiper_Captain_Contrat2} alt="Swiper_Captain_Contrat" />
-                            </SwiperSlide>
+                            </div>
 
-                            <SwiperSlide style={{display:"flex", justifyContent:"center"}}>
-                                <Image src={Swiper_Landelpix} alt="Swiper_Landelpix" />
-                            </SwiperSlide>
+                            <div className={styles.containerPhone}>
+                                
+                                {
+                                    sport ?
+                                    <Image src={AsnieresVolleyMobile} alt="Asnieres Volley" /> : 
+                                    juridique ?
+                                    <Image src={CaptainContratMobile} alt="Captain Contrat" /> : 
+                                    <Image src={VroomlyMobile} alt="Vroomly" />}
 
-                            <SwiperSlide style={{display:"flex", justifyContent:"center"}}>
-                                <Image src={Swiper_Vroomly} alt="Swiper_Vroomly" />
-                            </SwiperSlide>
+                            </div>
 
-                            <SwiperSlide style={{display:"flex", justifyContent:"center"}}>
-                                <Image src={Swiper_WorldMy} alt="Swiper_WorldMy" />
-                            </SwiperSlide>
+                            <div className={styles.textAreaMobile}>
+                                {
+                                    sport ?
+                                    <div className={styles.asnieresVolleyText}>
+                                        <h2 className={styles.h2AsnieresVolley}>Asnières Volley</h2>
+                                        <p>
+                                            Le site web du club de volley ball d&apos;Asnières-sur-Seine permet à l&apos;association de <span className={styles.markerAsnieresVolley}>présenter</span> leurs informations 
+                                            (histoire du club, membre des équipes, entraineurs, tarifs, horaires d&apos;entrainements, ...).<br/><br/>
 
-                            <SwiperSlide style={{display:"flex", justifyContent:"center"}}>
-                                <Image src={Swiper_WorldMy2} alt="Swiper_WorldMy" />
-                            </SwiperSlide>
-                        </Swiper>
-                    </div>
+                                            Le contenu est <span className={styles.markerAsnieresVolley}>modifiable</span> par les membres de l&apos;association. Le développement d&apos;une 
+                                            API permettant de <span className={styles.markerAsnieresVolley}>scrapper</span> les informations de la fédération nationale de volley 
+                                            ball a été faite pour que les scores ainsi que les matchs à venir soient visible depuis le site.
+                                        </p>
+                                    </div> : 
+                                    juridique ?
+                                    <div className={styles.captainContratText}>
+                                        <h2 className={styles.h2CaptainContrat}>Captain Contrat</h2>
+                                        <p>
+                                            Captain contrat <span className={styles.markerCaptainContrat}>accompagne</span> les entrepreneurs dans toutes 
+                                            les démarches juridiques de la vie d&apos;une entreprise. <br/><br/>
+
+                                            Cela permet de réaliser toutes les démarches <span className={styles.markerCaptainContrat}>100% en ligne</span> avec un espace client, 
+                                            où des juristes et avocats dédiés pourront réaliser toutes les démarches juridiques du client.
+                                        </p>
+                                    </div> : 
+                                    <div className={styles.vroomlyText}>
+                                        <h2 className={styles.h2Vroomly}>Vroomly</h2>
+                                        <p>
+                                            Vroomly est une plateforme de mise en relation entre clients et garagistes. Les utilisateurs peuvent s&apos;y rendre pour comparer les 
+                                            garages en termes de <span className={styles.markerVroomly}>prix</span> et de <span className={styles.markerVroomly}>distance</span>. 
+                                            Ils pourront ensuite vérifier la réputation de ce garage pour finalement choisir un créneau et prendre rendez-vous.<br/><br/>
+
+                                            En plus de cette partie <span className={styles.markerVroomly}>BtoC</span>, Vroomly fournit les pièces pour le garage et des interfaces <span className={styles.markerVroomly}>BtoB</span> sont aussi présentes sur cette plateforme.
+                                        </p>
+                                    </div>
+                                }
+
+                                
+
+                            </div>
+                        </section>
+                        
+                        <section id={styles.realisations} style={{backgroundImage: `url(${FondBlancRealisations.src})`,backgroundPosition: "70% 5rem", backgroundRepeat:"no-repeat" }}>
                     
-                </section>
+                            <div className={styles.realisation}>
+                                <div className={styles.visualRealisation}>
+                                    <div className={styles.formatDesktop}>
+                                        <Image src={VroomlyDesktop} alt="Vroomly" />
+                                    </div>
+                                    <div className={styles.formatMobile}>
+                                        <Image src={VroomlyMobile} alt="Vroomly" />
+                                    </div>
+                                </div>
+                                <div className={styles.textArea}>
+                                    <h2 className={styles.h2Vroomly}>Vroomly</h2>
+                                    <p>
+                                        Vroomly est une plateforme de mise en relation entre clients et garagistes. Les utilisateurs peuvent s&apos;y rendre pour comparer les 
+                                        garages en termes de <span className={styles.markerVroomly}>prix</span> et de <span className={styles.markerVroomly}>distance</span>. 
+                                        Ils pourront ensuite vérifier la réputation de ce garage pour finalement choisir un créneau et prendre rendez-vous.<br/><br/>
 
-                {openModal && <Modal openModal={setOpenModal} />} 
-                
-                <Footer />
-            </div>
-        </div>
+                                        En plus de cette partie <span className={styles.markerVroomly}>BtoC</span>, Vroomly fournit les pièces pour le garage et des interfaces
+                                        <span className={styles.markerVroomly}> BtoB</span> sont aussi présentes sur cette plateforme.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className={styles.realisation}>
+                                <div className={styles.textArea}>
+                                    <h2 className={styles.h2AsnieresVolley}>Asnières Volley</h2>
+                                    <p>
+                                        Le site web du club de volley-ball d&apos;Asnières-sur-Seine permet à l&apos;association de <span className={styles.markerAsnieresVolley}>présenter</span> leurs 
+                                        informations (histoire du club, membre des équipes, entraîneur, tarifs, horaires d&apos;entraînements, ...).<br/><br/>
+
+                                        Le contenu est <span className={styles.markerAsnieresVolley}>modifiable</span> par les membres de l&apos;association. Le développement d&apos;une API permettant 
+                                        de <span className={styles.markerAsnieresVolley}>scrapper</span> les informations de la fédération nationale de volley-ball a été pour que les scores 
+                                        ainsi que les matchs à venir soient depuis le site.
+                                    </p>
+                                </div>
+
+                                <div className={styles.visualRealisation}>
+                                    <div className={styles.formatDesktop}>
+                                        <Image src={AsnieresVolleyDesktop} alt="Asnieres Volley" />
+                                    </div>
+                                    <div className={styles.formatMobile}>
+                                        <Image src={AsnieresVolleyMobile} alt="Asnieres Volley" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className={styles.realisation}>
+                                <div className={styles.visualRealisation}>
+                                    <div className={styles.formatDesktop}>
+                                        <Image src={CaptainContratDesktop} alt="Captain Contrat" />
+                                    </div>
+                                    <div className={styles.formatMobile}>
+                                        <Image src={CaptainContratMobile} alt="Captain Contrat" />
+                                    </div>
+                                </div>
+                                <div className={styles.textArea}>
+                                    <h2 className={styles.h2CaptainContrat}>Captain Contrat</h2>
+                                    <p>
+                                        Captain contrat <span className={styles.markerCaptainContrat}>accompagne</span> les entrepreneurs dans toutes 
+                                        les démarches juridiques de la vie d&apos;une entreprise. <br/><br/>
+
+                                        Cela permet de réaliser toutes les démarches <span className={styles.markerCaptainContrat}>100% en ligne</span> avec un espace client, 
+                                        où des juristes et avocats dédiés pourront réaliser toutes les démarches juridiques du client.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </section>
+
+                        <section id={styles.autresRealisations} style={{backgroundImage: `url(${FondBlancRealisations2.src})`, backgroundPositionY: "0rem", backgroundRepeat:"no-repeat" }}>
+                            
+                            <h2>AUTRES <span>RÉALISATIONS</span></h2>
+                            
+                            <div className={styles.introMobile}>
+
+                                <div className={styles.containerTel}>
+                                    <Image src={RectangleVert} alt='Rectangle Vert' />
+                                    <Image src={TelVert} alt='Tel Vert' />
+                                </div>
+
+                                <div className={styles.containerTel}>
+                                    <Image src={RectangleRouge} alt='Rectangle Rouge' />
+                                    <Image src={TelRouge} alt='Tel Rouge' />
+                                </div>
+
+                                <div className={styles.containerTel}>
+                                    <Image src={RectangleBleu} alt='Rectangle Bleu' />
+                                    <Image src={TelBleu} alt='Tel Bleu' />
+                                </div>
+                            </div>
+
+                            <div className={styles.containerIntroMobile_Mobile} >
+                                <div className={styles.introMobile_Mobile}>
+                                <Swiper
+                                    slidesPerView={1}
+                                    spaceBetween={30}
+                                    loop={true}
+                                    pagination={{
+                                    clickable: true,
+                                    }}
+                                    navigation={false}
+                                    modules={[Pagination]}
+                                    className="mySwiper"
+                                >
+                                    <SwiperSlide style={{display:"flex", justifyContent:"center"}}>
+                                        <Image src={TelVertMobile} alt="TelVertMobile" />
+                                    </SwiperSlide>
+
+                                    <SwiperSlide style={{display:"flex", justifyContent:"center"}}>
+                                        <Image src={TelRougeMobile} alt="TelRougeMobile" />
+                                    </SwiperSlide>
+
+                                    <SwiperSlide style={{display:"flex", justifyContent:"center"}}>
+                                        <Image src={TelBleuMobile} alt="TelBleuMobile" />
+                                    </SwiperSlide>
+
+                                    
+                                </Swiper>
+
+                                    {/* <div className={styles.containerImage}>
+                                        <Image src={TelVertMobile} alt="TelVertMobile" />
+                                    </div>
+                                    <div className={styles.containerImage}>
+                                        <Image src={TelRougeMobile} alt="TelRougeMobile" />
+                                    </div>
+                                    <div className={styles.containerImage}>
+                                        <Image src={TelBleuMobile} alt="TelBleuMobile" />
+                                    </div>               */}
+                                </div>
+                            </div>
+
+                            <div className={styles.containerMacbook}>
+                                <div className={styles.macbook}>
+                                    <Image src={MacbookSiteRudolph} alt='Réalisation pour Tuyau Flexibles Rudolph' />
+                                </div>
+                            </div>
+
+                            <div className={styles.containerCarouselRealisations}>
+
+                                <Swiper
+                                    slidesPerView={1}
+                                    spaceBetween={30}
+                                    loop={true}
+                                    pagination={{
+                                    clickable: true,
+                                    }}
+                                    navigation={true}
+                                    modules={[Pagination, Navigation]}
+                                    className="mySwiper"
+                                >
+                                    <SwiperSlide style={{display:"flex", justifyContent:"center"}}>
+                                        <Image src={Swiper_Captain_Contrat} alt="Swiper_Captain_Contrat" />
+                                    </SwiperSlide>
+                                    
+                                    <SwiperSlide style={{display:"flex", justifyContent:"center"}}>
+                                        <Image src={Swiper_Captain_Contrat2} alt="Swiper_Captain_Contrat" />
+                                    </SwiperSlide>
+                                    
+                                    <SwiperSlide style={{display:"flex", justifyContent:"center"}}>
+                                        <Image src={Swiper_Landelpix} alt="Swiper_Landelpix" />
+                                    </SwiperSlide>
+                                    
+                                    <SwiperSlide style={{display:"flex", justifyContent:"center"}}>
+                                        <Image src={Swiper_Vroomly} alt="Swiper_Vroomly" />
+                                    </SwiperSlide>
+
+                                    <SwiperSlide style={{display:"flex", justifyContent:"center"}}>
+                                        <Image src={Swiper_WorldMy} alt="Swiper_WorldMy" />
+                                    </SwiperSlide>
+                                    
+                                    <SwiperSlide style={{display:"flex", justifyContent:"center"}}>
+                                        <Image src={Swiper_WorldMy2} alt="Swiper_WorldMy" />
+                                    </SwiperSlide>
+                                </Swiper>
+        
+                            </div>
+
+                            <div className={styles.containerCarouselRealisationsMobile}>
+                                <Swiper
+                                    slidesPerView={1}
+                                    spaceBetween={30}
+                                    loop={true}
+                                    pagination={{
+                                    clickable: true,
+                                    }}
+                                    navigation={false}
+                                    modules={[Pagination, Navigation]}
+                                    className="mySwiper"
+                                >
+                                    <SwiperSlide style={{display:"flex", justifyContent:"center"}}>
+                                        <Image src={Swiper_Captain_Contrat} alt="Swiper_Captain_Contrat" />
+                                    </SwiperSlide>
+
+                                    <SwiperSlide style={{display:"flex", justifyContent:"center"}}>
+                                        <Image src={Swiper_Captain_Contrat2} alt="Swiper_Captain_Contrat" />
+                                    </SwiperSlide>
+
+                                    <SwiperSlide style={{display:"flex", justifyContent:"center"}}>
+                                        <Image src={Swiper_Landelpix} alt="Swiper_Landelpix" />
+                                    </SwiperSlide>
+
+                                    <SwiperSlide style={{display:"flex", justifyContent:"center"}}>
+                                        <Image src={Swiper_Vroomly} alt="Swiper_Vroomly" />
+                                    </SwiperSlide>
+
+                                    <SwiperSlide style={{display:"flex", justifyContent:"center"}}>
+                                        <Image src={Swiper_WorldMy} alt="Swiper_WorldMy" />
+                                    </SwiperSlide>
+
+                                    <SwiperSlide style={{display:"flex", justifyContent:"center"}}>
+                                        <Image src={Swiper_WorldMy2} alt="Swiper_WorldMy" />
+                                    </SwiperSlide>
+                                </Swiper>
+                            </div>
+                            
+                        </section>
+
+                        {openModal && <Modal openModal={setOpenModal} />} 
+                        
+                        <Footer />
+                    </div>
+                </div>
+            </main>
+        </>
     ) 
 }
 

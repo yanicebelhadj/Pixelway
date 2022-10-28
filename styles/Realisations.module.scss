@@ -1,5 +1,5 @@
 .realisations{
-    overflow-x: hidden;
+    // overflow-x: hidden;
     .containerSplashScreen{
         width: 100vw;
         height: 100vh;
@@ -168,7 +168,7 @@
             }
 
             .IntroRealisation1{
-                transform: rotate(-7.5deg) translateX(-293px) translateY(-150px);
+                transform: rotate(-7.5deg) translateX(-230px) translateY(-150px);
                 transform-origin: left bottom;
             }
 
@@ -515,8 +515,53 @@
                
             }
 
+            .sceneWrapper{
+                width: 100vw;
+                height: 3000px;
+                margin: 5rem 0 5rem -7.5rem;
+
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+
+                .macbook{
+                    width: 100%;
+                    position: sticky;
+                    top: 10rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    
+                    span{
+                        overflow: visible !important;
+                        img{
+                            border-radius: 16px;
+                        }
+                    }
+                }
+                .containerLongPageRudolph{
+                    position: absolute;
+                    top: 554rem;
+                    opacity: 0;
+                    span{
+                        width: 100vw !important;
+                        overflow: visible !important;
+                        span{
+                            width: 100vw !important;
+                        }
+                        img{
+                            max-width: 100vw;
+                            width: 100vw;
+                            max-height: inherit !important;
+                            height: inherit !important;
+                        }
+                    }
+                }
+            }
+
             .containerCarouselRealisations{
-                margin-top: 98px;
+                // margin-top: 98px;
+                margin-top: 440rem;
                 margin-bottom: 0;
                 span{
                     img{
@@ -601,7 +646,7 @@
             }
     
             #realisationsMobile{
-                padding: 7.5rem 1rem 2.5rem;
+                padding: 7.5rem 0 2.5rem !important;
                 display: block !important;
                 .categories{
                     width: 95vw;
@@ -679,6 +724,7 @@
                 }
     
                 .textAreaMobile{
+                    margin: 0 1rem;
                     h2{
                         margin: 0 0 2rem;
                         line-height: 55px;
@@ -795,9 +841,12 @@
                     margin: 0 !important;
                 }
             }
+
+            .sceneWrapper{
+                margin-left: -1rem !important;
+            }
         }
     }
-
 
     @media screen and (max-width: 834px) {
         .containerSplashScreen{
@@ -950,7 +999,6 @@
 
     @media screen and (max-width: 500px) {
         .containerRealisations{
-
             #introRealisations{
 
                 .containerImageMobile{
